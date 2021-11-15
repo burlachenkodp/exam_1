@@ -1,0 +1,96 @@
+.why-us {
+  min-height: 100vh;
+  background-size: cover;
+  color: #fff;
+
+  &__container {
+    padding-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__gallery {
+    display: flex;
+    flex-direction: column;
+    width: 474px;
+    min-height: 445px;
+  }
+  .why-us__image-top {
+    align-self: flex-start;
+    @include media("<tablet") {
+      align-self: center;
+    }
+    img {
+      padding-top: 10px;
+      @include media("<=phone") {
+        width: 280px;
+      }
+    }
+  }
+  .why-us__image-bottom {
+    align-self: flex-end;
+    @include media("<tablet") {
+      align-self: center;
+    }
+    img {
+      padding-top: 10px;
+      @include media("<phone") {
+        width: 280px;
+      }
+    }
+  }
+
+  &__item {
+    display: block;
+    max-width: 538px;
+    min-height: 445px;
+    @include media("<tablet") {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  &__title {
+    padding-top: 81px;
+    margin-bottom: 58px;
+
+    h1 {
+      font-family: "Aleo", serif;
+      font-size: 34px;
+      font-weight: 400;
+    }
+  }
+  &__text {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+
+    p {
+      margin-bottom: 26px;
+    }
+  }
+  &__btn {
+    display: block;
+    text-align: center;
+    min-width: 225px;
+    padding: 21px 38px;
+    background-color: #5474fd;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Aleo", serif;
+    font-weight: 400;
+    border: none;
+    @include media("<tablet") {
+      display: block;
+      margin: 0 auto;
+      width: 50%;
+    }
+    &:hover {
+      background-color: #354ebf;
+    }
+    &:active {
+      background-color: #0c1541;
+    }
+  }
+}

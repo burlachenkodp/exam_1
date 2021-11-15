@@ -1,0 +1,100 @@
+.start-page {
+  min-height: 100vh;
+  background-size: cover;
+  &__title {
+    max-width: 650px;
+    padding-top: 267px;
+    margin: 0 auto 49px;
+    text-align: center;
+    color: white;
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      margin-bottom: 5px;
+    }
+    span {
+      font-size: 22px;
+      letter-spacing: 6px;
+      font-weight: 300;
+    }
+  }
+
+  &__form {
+    position: relative;
+    max-width: 650px;
+    margin: 0 auto 120px;
+
+    input {
+      width: 100%;
+      min-height: 59px;
+      background: #f9f0da;
+      text-align: center;
+      padding-left: 25px;
+      padding-right: 150px;
+      font-size: 14px;
+      letter-spacing: 3px;
+      color: #999999;
+      @include media("<=phone") {
+        padding: 0;
+      }
+    }
+  }
+  &__button {
+    padding: 19px 41px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: #5474fd;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 1px;
+    &:hover {
+      background-color: #354ebf;
+    }
+    &:active {
+      background-color: #0c1541;
+    }
+    @include media("<=phone") {
+      position: relative;
+      width: 100%;
+    }
+  }
+  button:after {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 12px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("/src/img/search.png");
+  }
+  &__scroll {
+    display: block;
+    text-align: center;
+    max-width: 170px;
+    margin: 0 auto;
+    padding: 10px 10px 25px;
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-weight: regular;
+    color: #e0e6ea;
+
+    &::after {
+      display: block;
+      position: absolute;
+      top: 35px;
+      right: 50%;
+      content: "";
+      width: 7px;
+      height: 7px;
+      transform: rotate(45deg) translateX(50%);
+      border-right: 1px solid #e0e6ea;
+      border-bottom: 1px solid #e0e6ea;
+    }
+  }
+}

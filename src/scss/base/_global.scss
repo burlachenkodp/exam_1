@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+a {
+  color: white;
+}
+
+button {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+}
