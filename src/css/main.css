@@ -583,7 +583,7 @@ button {
 .why-us__btn {
   display: block;
   text-align: center;
-  min-width: 225px;
+  width: 225px;
   padding: 21px 38px;
   background-color: #5474fd;
   color: #fff;
@@ -709,7 +709,7 @@ button {
 .offer__btn {
   display: block;
   text-align: center;
-  min-width: 225px;
+  width: 225px;
   padding: 21px 38px;
   background-color: #5474fd;
   color: #fff;
