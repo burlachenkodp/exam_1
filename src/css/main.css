@@ -632,11 +632,31 @@ button {
 .features__item {
   width: calc(100% / 3);
   text-align: center;
+  position: relative;
 }
 @media (max-width: 767px) {
   .features__item {
     width: 100%;
   }
+}
+.features__item::after {
+  display: block;
+  position: absolute;
+  top: -50px;
+  left: 220px;
+  content: "";
+  border-top: 1px dotted #e0e6ea;
+  width: 300px;
+  height: 130px;
+  border-radius: 50%;
+}
+@media (max-width: 1099px) {
+  .features__item::after {
+    display: none;
+  }
+}
+.features__item:last-child::after {
+  display: none;
 }
 .features__icon {
   color: white;

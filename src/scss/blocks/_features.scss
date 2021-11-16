@@ -14,8 +14,28 @@
   &__item {
     width: calc(100% / 3);
     text-align: center;
+    position: relative;
+
     @include media("<tablet") {
       width: 100%;
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      top: -50px;
+      left: 220px;
+      content: "";
+      border-top: 1px dotted #e0e6ea;
+      width: 300px;
+      height: 130px;
+      border-radius: 50%;
+      @include media("<1100px") {
+        display: none;
+      }
+    }
+    &:last-child::after {
+      display: none;
     }
   }
 
