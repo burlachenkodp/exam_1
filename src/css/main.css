@@ -239,6 +239,12 @@ button {
   letter-spacing: 3px;
   margin-bottom: 5px;
 }
+@media (max-width: 320px) {
+  .start-page__title h1 {
+    font-size: 36px;
+    letter-spacing: 0px;
+  }
+}
 .start-page__title span {
   font-size: 22px;
   letter-spacing: 6px;
@@ -247,13 +253,14 @@ button {
 .start-page__form {
   position: relative;
   max-width: 650px;
-  margin: 0 auto 120px;
+  margin: 0 auto 110px;
 }
 .start-page__form input {
   width: 100%;
-  min-height: 59px;
   background: #f9f0da;
   text-align: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
   padding-left: 25px;
   padding-right: 150px;
   font-size: 14px;
@@ -262,7 +269,7 @@ button {
 }
 @media (max-width: 320px) {
   .start-page__form input {
-    padding: 0;
+    padding-right: 0;
   }
 }
 .start-page__button {
@@ -286,6 +293,7 @@ button {
   .start-page__button {
     position: relative;
     width: 100%;
+    right: 0px;
   }
 }
 .start-page button:after {
@@ -500,6 +508,7 @@ button {
           flex-direction: column;
   width: 474px;
   min-height: 445px;
+  margin: 0 auto;
 }
 .why-us .why-us__image-top {
   -ms-flex-item-align: start;
@@ -510,6 +519,7 @@ button {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    width: 290px;
   }
 }
 .why-us .why-us__image-top img {
@@ -517,7 +527,7 @@ button {
 }
 @media (max-width: 320px) {
   .why-us .why-us__image-top img {
-    width: 280px;
+    width: 290px;
   }
 }
 .why-us .why-us__image-bottom {
@@ -529,14 +539,15 @@ button {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    width: 290px;
   }
 }
 .why-us .why-us__image-bottom img {
   padding-top: 10px;
 }
-@media (max-width: 319px) {
+@media (max-width: 320px) {
   .why-us .why-us__image-bottom img {
-    width: 280px;
+    width: 290px;
   }
 }
 .why-us__item {
@@ -544,7 +555,7 @@ button {
   max-width: 538px;
   min-height: 445px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .why-us__item {
     width: 100%;
     margin: 0 auto;
@@ -743,7 +754,7 @@ button {
   -ms-flex-wrap: no-wrap;
       flex-wrap: no-wrap;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .comment__container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -790,6 +801,7 @@ button {
   font-size: 16px;
   font-weight: 300;
   line-height: 25px;
+  text-indent: 30px;
 }
 
 .footer {

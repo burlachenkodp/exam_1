@@ -15,16 +15,18 @@
     flex-direction: column;
     width: 474px;
     min-height: 445px;
+    margin: 0 auto;
   }
   .why-us__image-top {
     align-self: flex-start;
     @include media("<tablet") {
       align-self: center;
+      width: 290px;
     }
     img {
       padding-top: 10px;
       @include media("<=phone") {
-        width: 280px;
+        width: 290px;
       }
     }
   }
@@ -32,11 +34,12 @@
     align-self: flex-end;
     @include media("<tablet") {
       align-self: center;
+      width: 290px;
     }
     img {
       padding-top: 10px;
-      @include media("<phone") {
-        width: 280px;
+      @include media("<=phone") {
+        width: 290px;
       }
     }
   }
@@ -45,7 +48,7 @@
     display: block;
     max-width: 538px;
     min-height: 445px;
-    @include media("<tablet") {
+    @include media("<desktop") {
       width: 100%;
       margin: 0 auto;
     }
@@ -81,6 +84,7 @@
     font-family: "Aleo", serif;
     font-weight: 400;
     border: none;
+
     @include media("<tablet") {
       display: block;
       margin: 0 auto;
