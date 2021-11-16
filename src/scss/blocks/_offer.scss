@@ -54,7 +54,7 @@
     @include media("<tablet") {
       display: block;
       margin: 0 auto;
-      width: 50%;
+      width: 100%;
     }
     &:hover {
       background-color: #354ebf;
