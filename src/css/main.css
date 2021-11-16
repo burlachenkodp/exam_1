@@ -165,6 +165,7 @@ a {
 button {
   font-family: "Aleo", serif;
   font-weight: 400;
+  cursor: pointer;
 }
 
 @font-face {
